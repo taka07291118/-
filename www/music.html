@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <title>Monaca Education ダイレクトプレビュー</title>
+    <script src="components/loader.js"></script><link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css"><script src="js/education.js" defer></script><script src="js/config.js" defer></script><script src="js/main.js" defer></script>
+    <script>
+  const audio = new Audio ('sampule.mp3');
+  document.getElementById('musicD').addEventListener('click',() => {
+  audio.play();
+});
+    </script>
+</head>
+<body class="musicA">
+    <label class="musicB"><center>♫音楽</center></label>
+    <label>音楽を選んでください。</label><br>
+    <input type="radio" name="music" value="ホワイトノイズ">ホワイトノイズ<br>
+    <input type="radio" name="music" value="B">B<br>
+    <input type="radio" name="music" value="C">C<br>
+    <input type="radio" name="music" value="D">D<br>
+    <input type="radio" name="music" value="E">E<br>
+    <input type="radio" name="music" value="なし">なし<br>
+    <button class="musicD">
+        <a href="index.html">決定</a>
+    </button>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <title>Monaca Education ダイレクトプレビュー</title>
+    <script src="components/loader.js"></script><link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css"><script src="js/education.js" defer></script><script src="js/config.js" defer></script><script src="js/main.js" defer></script>
+    <script>
+    </script>
+</head> 
+<body class="setA">
+    <label class="setB"><center>⚙設定</center></label>
+    <label><div>年代を選んでください。<br>(睡眠時間が決定されます。)<div></label><br>
+    <input type="radio" name="年代" value="09:30:00" class="setE" id="eSleep" >小学生<br>
+    <input type="radio" name="年代" value="08:00:00" class="setE" id="jSleep">中学生<br>
+    <input type="radio" name="年代" value="07:30:00" class="setE" id="hSleep">高校生<br>
+    <input type="radio" name="年代" value="07:00:00" class="setE" id="aSleep">大人<br><br>
+    <label>起床時刻を入力してください。</label><br>
+    <input type="time" name="起床時刻" id="kTime" class="setF">
+    <button class="setG" onclick="time()">時刻を指定</button><br>
+    <div id="output" class="setA"></div><br>
+    <button class="setD">
+        <a href="index.html">決定</a>     
+    </button>
+</body> 
+</html>
